@@ -1,0 +1,24 @@
+mkdir gittest
+cd gittest
+touch index.html
+touch styles.css
+touch aboutMe.txt
+git init
+git add .
+git commit -m "first commit, added index.html styles.css aboutme.txt"
+vi aboutme.txt
+(short bio)
+git add .
+git commit -m "added bio to aboutme.txt"
+vi aboutme.txt
+(added favorite movie)
+git add .
+git commit -m "added favorite movie"
+git log
+git revert 19546ddb8
+vi aboutme.txt
+(added favorite book)
+git add .
+git commit -m added favorite book to aboutme.txt"
+
+
