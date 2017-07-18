@@ -1,0 +1,35 @@
+#container {
+    background-color: #d4d2ae;
+    padding: 20px;
+    width: 780px;
+    margin: auto;
+}
+
+.header {
+    display: block;
+    text-align: center;
+}
+
+.col {
+    display: block;
+    height: 125px;
+    margin: 3px auto;
+    border: 3px solid black;
+    padding: 10px;
+    width: 125px;
+    background: #82b4ee;
+}
+
+.colcont {
+    display: inline-block;
+}
+
+.col2 {
+    display: block;
+    height: 125px;
+    margin: 3px auto;
+    border: 3px solid black;
+    padding: 10px;
+    width: 125px;
+    background: #f36870;
+}
