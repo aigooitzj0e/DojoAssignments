@@ -1,0 +1,235 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#container {
+    width: 970px;
+    background: #245176;
+    margin: 0 auto;
+}
+
+#logo {
+    /*background-color: red;
+    height: 100px;
+    width: 250px;
+    border: 1px solid black;*/  
+    display: inline-block;
+    vertical-align: top;
+    margin: 25px 25px 10px 30px;
+}
+
+#searchbar {
+    /* background-color: gray;
+    height: 100px;
+    width: 300px; 
+    border: 1px solid black;  */
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 25px;
+    text-align: right;
+    color: white;
+}
+
+#searchbar a {
+    color: yellow;
+}
+
+#searchbar p {
+    margin-right: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.barbg {
+    height: 65px;
+    width: 250px;
+    background-color: #444444;
+    margin-left: 50px;
+    margin-top:5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #1f2327;
+}
+
+form {
+    margin-right: 25px;
+    vertical-align: middle;
+    line-height: 60px;
+}
+
+#search {
+    height: 30px;
+    width: 150px;
+    text-align: center;
+}
+
+#submit {
+    height: 25px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #245176;
+}
+
+#navbar {
+    height: 50px;
+    width: 750px;
+    background-color: #467dac;
+    margin: 0px auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #1f2327;
+}
+
+#navbar li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+     font-size: 20px;
+      /* font-weight: 20px;   */
+      margin-left: 30px;
+      vertical-align: middle;
+      line-height: 50px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+#sidebar {
+    /* width: 200px;
+    height: 300px;
+    background-color: green; */
+    display: inline-block;
+    margin: 25px 25px 25px 115px;
+    text-align: center;
+}
+
+#sidebar li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    margin-top: 13px;
+}
+
+#sidebar ul {
+    list-style-position: inside;
+}
+
+#sidebar a {
+    color: white;
+}
+
+#info {
+     width: 550px;
+    height: 300px;
+    /* background-color: blue;  */
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    padding: 15px;
+}
+
+.into {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.motto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin: 10px;
+    color: yellow;
+    font-size: 17px;
+}
+
+.zen {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+}
+
+#guide {
+    height: 230px;
+    width: 970px;
+    background-color: white;
+    border-top: 3px solid #183853;
+}
+
+#guide a {
+    text-decoration: none;
+    color: #8fb3d4;
+}
+
+.left {
+    background-color: white;
+    width: 380px;
+    height: 193px;
+    display: inline-block;
+    margin-left: 80px;
+    border-top: 4px solid #73a7d5;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    margin-top: 13px;
+    text-align: center;
+    padding: 10px;
+    /* list-style-position: inside; */
+}
+
+.left ul {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.right {
+    background-color: white;
+    width: 380px;
+    height: 193px;
+    display: inline-block;
+    margin-left: 20px;
+    border-top: 4px solid #73a7d5;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: top;
+    margin-top: 13px;
+    text-align: center;
+    padding: 10px;
+}
+
+.right ul {
+    margin-left: 40px;
+    font-size: 14px;
+}
+
+.getstart {
+    font-size: 13px;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+#footer {
+    height: 60px;
+    width: 570px;
+    background-image: linear-gradient(to bottom, #245176, #3374ac); 
+     padding: 20px 200px; 
+}
+
+.contact {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px 0px 0px 25px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+
+#footer a {
+    text-decoration: none;
+    color: #73a7d5;
+}
+
+.copy {
+    text-align: center;
+    font-size: 10px;
+    color: #73a7d5;
+}
+
+span {
+        color: #73a7d5;
+}
