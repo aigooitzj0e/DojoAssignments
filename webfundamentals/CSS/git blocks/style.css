@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #dee0d3;
+}
+
+#wrapper {
+    width: 895px;
+    background-color: #dddfd3;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#header {
+    height: 75px;
+    background-color: #39b0ac;
+    margin-bottom: 15px;
+}
+
+#header img {
+    margin: 7px 10px 7px 7px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header h2 {
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+}
+
+#header .a {
+    margin-top: 25px;
+    margin-left: 130px;
+    color: white;
+    /* float: right; */
+}
+
+#header a {
+    margin-top: 25px;
+    margin-left: 15px;
+    color: white;
+}
+
+#main {
+    /* height: 600px; */
+    background-color: #fbe691;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+#sidebar {
+    width: 230px;
+    height: 590px;
+    background-color: #154044;
+    margin-top: px;
+    display: inline-block; 
+    vertical-align: top;
+}
+
+
+#smbox {
+    display: inline-block;
+    width: 610px;
+    margin-left: 20px;
+    /* width: 20%; */
+}
+
+#row1 {
+    height: 180px;
+    width: 610px;
+    background-color: #154044;
+     /* display: inline-block;  */
+    margin-bottom: 25px;
+    margin-left:20px;
+    vertical-align: top;
+}
+
+.r1content {
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    background-color: #154044;
+    margin-right: 20px; 
+    margin-bottom: 15px;
+    vertical-align: top;
+}
+
+.r2content {
+    height: 180px;
+    width: 282px;
+    display: inline-block;
+    background-color: #154044;
+    margin-right: 20px;
+    margin-bottom: 15px;    
+}
+
+#row2 {
+    height: 180px;
+    width: 610px;
+    background-color: #154044;
+     /* display: inline-block;  */
+    margin-bottom: 25px;
+    margin-left:20px;
+    vertical-align: top;
+}
+
+ #row3 {
+    height: 190px;
+    width: 588px;
+    background-color: #154044;
+      /* display: inline-block;   */
+    /* margin-left:20px; */
+    vertical-align: top; 
+}
+
+#footer {
+    height: 85px;
+    background-color: #39b0ac;
+}
+
+.subtitle {
+    padding: 10px;
+}
+
+p{
+    padding: 0px 15px 0px 15px;
+}
+
+h3 {
+    padding: 15px;
+}
+
+#footer p {
+    padding: 35px 0px 0px 250px;
+    color: black;
+}
+
+#footer a {
+    color: purple;
+}
+
+span {
+    color: #39b0ac;
+}
