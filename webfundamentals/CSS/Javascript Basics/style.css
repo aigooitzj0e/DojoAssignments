@@ -2,15 +2,15 @@
     width: 970px;
     background-color: #1c345e;
     margin: 0 auto;
-    padding: 15px;
+    padding: 2px 15px;
 }
 
 .header {
     height: 45px;
     border-radius: 10px;
     background-color: #ce3036;
-    vertical-align: middle;
-    line-height: 5px;
+    /* vertical-align: middle; */
+    /* line-height: 5px; */
     padding: 15px;
     color: #c2d6ec;
 }
@@ -20,7 +20,7 @@
     width: 200px;
     background-color: #2a7d8c;
     border-radius: 10px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     margin-right: 15px;
     display: inline-block;
     vertical-align: top;
@@ -44,7 +44,7 @@ li{
     background-color: #0e1822;
     display: inline-block;
     border-radius: 10px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     padding: 15px;
 }
 
@@ -56,7 +56,7 @@ li{
     margin-top: 15px;
     vertical-align: middle;
     line-height: 10px;
-    padding: 15px;
+    padding: 30px 15px 0px 15px;
 }
 
 h2 {
