@@ -1,0 +1,82 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    width: 750px;
+    /* background-color: grey; */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
+    background-image: -webkit-linear-gradient(top, grey, white);
+    background-image: -moz-linear-gradient(top, grey, white);
+    background-image: linear-gradient(to bottom, grey, white);
+    padding: 20px;
+    margin: auto;
+}
+
+#form_container{
+    width: 310px;
+    /* margin-top: 30px; */
+     /* background-color: grey;  */
+     display: inline-block;
+
+}
+li{
+    margin-bottom: 15px;
+    text-align: left;
+    list-style-type: none;
+}
+
+#desc {
+    width: 252px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #444444;
+    margin-top: 5px;
+    /* margin-top: 15px; */
+}
+
+button {
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px #444444;
+    border-radius: 5px;
+}
+
+#cardHolder {
+    display: inline-block;
+    vertical-align: top;
+     margin-left: 100px;  
+     width: 300px;
+     /* height: 500px; */
+     /* background-color: blue;     */
+}
+
+.card {
+    width: 300px;
+    height: 150px;
+     background-color: #f7f58f; 
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 5px #444444;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+     padding-top: 15px; 
+}
+
+p{
+    text-align: center;
+}
+
+input {
+    box-shadow: 5px 5px 5px #444444;
+    border-radius: 5px;
+}
+
+/* textarea {
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #444444;
+    margin-top: 5px;
+    
+} */

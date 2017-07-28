@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+
+            $(document).ready(function(){
+
+
+                $("#form").submit(function(){
+                    $("#form").serializeArray();
+                    $('tbody').append("<tr><td>"+first_name.value+"</td><td>"+last_name.value+"</td><td>"+email.value+"</td><td>"+contact.value+"</td></tr>");
+                    $("input").val("");
+                    return false;
+                });
+                $("#btn").hover(function(){
+                    $("#btn").css("color", "white")
+                })
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <table>
+                <thead>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Contact #</th>
+                <thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            <div id="main">
+                <h1>Add User</h1>
+                <hr>
+                <form id="form">
+                    <ul>
+                        <li><label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name"></li>
+                        
+                        <li><label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name"></li>
+
+                        <li><label for="email">Email Address:</label>
+                            <input type="text" id="email" name="email"></li>
+
+                        <li><label for="contact">Contact #:</label>
+                            <input type="text" id="contact" name="contact"></li>
+                    </ul>
+
+                    <button id="btn" type="submit">Add User</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=UnifrakturMaguntia" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+            $(document).ready(function(){
+                $("#info").hide();
+                
+                $("#stark").hover(function(){
+                    $("#wrapper").css("background-image", "url('stark1.gif')");
+                }, function(){
+                    $("#wrapper").css('background-image', "url('background.jpg')");
+                })
+                
+                $("#targ").hover(function(){
+                    var temp = $(this).attr('src');
+                    $("#wrapper").css("background-image", "url('targ1.gif')");
+                }, function(){
+                    $("#wrapper").css('background-image', "url('background.jpg')");
+                })
+
+                $("#lann").hover(function(){
+                    var temp = $(this).attr('src');
+                    $("#wrapper").css("background-image", "url('lann1.gif')");
+                }, function(){
+                    $("#wrapper").css('background-image', "url('background.jpg')");
+                })
+
+                $("#bara").hover(function(){
+                    var temp = $(this).attr('src');
+                    $("#wrapper").css("background-image", "url('bara1.gif')");
+                }, function(){
+                    $("#wrapper").css('background-image', "url('background.jpg')");
+                })
+                
+                $("img").click(function(){
+                    $("#info").slideToggle();
+                    // $(this).attr('src', 'stark.jpg');
+                    $.get("https://anapioficeandfire.com/api/houses/?name="+$(this).attr("alt") , function (res) {
+                        console.log(res);
+                        var html_str = "";
+                        var houses = "";
+                        html_str += "<h2>Name: "+res[0].name+"</h2>";
+                        html_str += "<h2>Words: "+res[0].words+"</h2>";
+                        html_str += "<h2>Titles: "+res[0].titles+"</h2>";
+                        // html_str += "<h4>Temperature: "+temperature+"</h4>";
+
+                    $('#info').html(html_str);
+
+                    }, "json");
+
+                    return false;
+
+                 
+
+                });
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Game of Thrones</h1>
+            <div id="picStrip">
+                 <img id="stark" class="mainPic" src="stark.jpg" alt="House Stark of Winterfell" alt-src="url('stark1.gif')"> 
+                 <img id="targ" class="mainPic" src="targaryen.jpg" alt="House Targaryen of King's Landing" alt-src="url('targ1.gif')"> 
+                 <img id="lann" class="mainPic" src="lannister.jpg" alt="House Lannister of Casterly Rock" alt-src="lann1.gif"> 
+                 <img id="bara" class="mainPic" src="baratheon.png" alt="House Baratheon of Dragonstone" alt-src="bara1.gif"> 
+
+            </div>
+            <div id="info"></div>
+        </div>
+    </body>
+</html>

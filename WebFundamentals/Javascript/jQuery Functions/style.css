@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    padding: 50px 0px;
+    width: 850px;
+    /* height: 900px; */
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+}
+
+p {
+    display: inline;
+    padding-left: 25px;
+}
+
+button {
+    padding: 10px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(darkgrey), to(grey));
+    background-image: -webkit-linear-gradient(top, darkgrey, grey);
+    background-image: -moz-linear-gradient(top, darkgrey, grey);
+    background-image: linear-gradient(to bottom, darkgrey, grey);
+}
+
+.clickP, .hideP, .toggleP, .slideDownP, .slideUpP, .slideToggleP, .fadeInP, .fadeOutP, #addClassP, .beforeP, .beforeh4, .afterP, .afterh4, .appendP, .htmlP, .htmlh4, .attrP, .textP, .dataP, .valP  {
+    text-align: center; 
+    margin-bottom: 50px; 
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.red {
+    color: red;
+}
+
+input {
+    display: block;
+    margin: 0 auto;
+}

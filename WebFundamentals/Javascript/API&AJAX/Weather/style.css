@@ -1,0 +1,15 @@
+#container {
+    width: 300px;
+    height: 255px;
+    background-color: grey;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#info {
+    width: 300px;
+    height: 200px;
+    margin-top: 30px;
+    background-color: lightgrey;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+
+            $(document).ready(function(){
+                 $("form").submit(function(){
+                    //  console.log(city.value);
+                    $.get("http://api.openweathermap.org/data/2.5/weather?q="+city.value+"&APPID=dc9a78fc6c205f64227f8a82372df322", function (res) {
+                        console.log(res);
+                        var temperature = res.main.temp;
+                        temperature = Math.floor(temperature * 9/5 - 459.67);
+                        var html_str = "";
+                        html_str += "<h1>" + res.name + "</h1>";
+                        html_str += "<h4>Temperature: "+temperature+"</h4>";
+
+                    $('#info').html(html_str);
+
+                    }, "json");
+
+                    return false;
+                });
+            });
+
+
+
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <form id="form">
+                <input type="text" id="city" name="city">
+                <input type="submit">
+            </form> 
+            <div id="info"></div>
+        </div>
+    </body>
+</html>
+
+<!-- http://api.openweathermap.org/data/2.5/forecast/daily?id=524901&APPID=dc9a78fc6c205f64227f8a82372df322 -->

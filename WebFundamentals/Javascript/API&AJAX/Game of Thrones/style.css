@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+#wrapper {
+    background-image: url("background.jpg");
+    background-size: 1900px 950px;
+    background-repeat: no-repeat;
+    height: 850px;
+    width: 1900px;
+    margin: auto;
+    /* opacity: 0.5;   */
+}
+
+ .mainPic{
+    height: 275px;
+    opacity: .5;
+
+     width: 472px; 
+}
+
+
+img:hover {
+    opacity: 1;
+}
+
+#picStrip {
+    padding: 10px 0px;
+    background-color: #353535;
+    margin-top: 75px;
+    box-shadow: 0px 15px 15px black;
+}
+
+h1 {
+    position: absolute;
+    color: white;
+    left: 800px;
+    top: 20px;
+    font-family: 'UnifrakturMaguntia', cursive;
+    font-size: 50px;
+}
+
+#info {
+    width: 600px;
+    height: 350px;
+     background-color: transparent;  
+    background-image: -webkit-gradient(linear, left top, left bottom, from(white), totransparent);
+    background-image: -webkit-linear-gradient(top, white ,transparent);
+    background-image: -moz-linear-gradient(top, white ,transparent);
+    background-image: linear-gradient(to bottom, white ,transparent);
+    /* background-image: url("info_bg.webp");
+    background-repeat: no-repeat;
+    background-size: 600px 350px; */
+    /* opacity: 0.5; */
+    margin: 70px auto;
+    /* border: 5px solid black; */
+    border-radius: 10px;
+}
+
+h2 {
+    background-color: transparent;
+    padding: 20px 50px;
+    
+    /* text-align: center; */
+}
+
+img:hover {
+    background: url("stark1.gif");
+} 

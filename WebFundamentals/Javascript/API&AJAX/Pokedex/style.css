@@ -1,0 +1,32 @@
+#wrapper {
+    width: 1185px;
+    padding: 15px;
+    background-color: black;
+    margin: auto;
+}
+#pokeList {
+    width:800px;
+    height: 800px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
+    background-image: -webkit-linear-gradient(top, grey, white);
+    background-image: -moz-linear-gradient(top, grey, white);
+    background-image: linear-gradient(to bottom, grey, white);
+    display: inline-block;
+    vertical-align: top;
+    overflow: scroll;
+}
+
+#pokeDex {
+    width: 300px;
+    height: 500px;
+    background-color: lightgrey;
+    border: 10px solid red;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 15px;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}

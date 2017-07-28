@@ -1,0 +1,20 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#wrapper {
+    width: 660px;
+    background-color: grey;
+    margin: auto;
+}
+
+img {
+    height: 150px;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+}

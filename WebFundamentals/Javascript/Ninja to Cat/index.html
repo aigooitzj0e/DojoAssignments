@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ninja To Cat</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+
+            $(document).ready(function(){
+                $('#box1').click(function() {
+                    var original = $(this).attr('src');
+                    $(this).attr("src", $(this).attr('data-alt-src'))
+                    $(this).attr("data-alt-src", original)
+                });
+
+                $('#box2').click(function() {
+                    var original = $(this).attr('src');
+                    $(this).attr("src", $(this).attr('data-alt-src'))
+                    $(this).attr("data-alt-src", original)
+                });
+
+                $('#box3').click(function() {
+                    var original = $(this).attr('src');
+                    $(this).attr("src", $(this).attr('data-alt-src'))
+                    $(this).attr("data-alt-src", original)
+                });
+
+                $('#box4').click(function() {
+                    var original = $(this).attr('src');
+                    $(this).attr("src", $(this).attr('data-alt-src'))
+                    $(this).attr("data-alt-src", original)
+                });
+
+                $('#box5').click(function() {
+                    var original = $(this).attr('src');
+                    $(this).attr("src", $(this).attr('data-alt-src'))
+                    $(this).attr("data-alt-src", original)
+                });
+                
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <img id="box1" src="img/ninja0.png" data-alt-src="img/cat0.png">
+            <img id="box2" src="img/ninja1.png" data-alt-src="img/cat1.png">
+            <img id="box3" src="img/ninja2.png" data-alt-src="img/cat2.png">
+            <img id="box4" src="img/ninja3.png" data-alt-src="img/cat3.png">
+            <img id="box5" src="img/ninja4.png" data-alt-src="img/cat4.png">
+        </div>
+    </body>
+</html>

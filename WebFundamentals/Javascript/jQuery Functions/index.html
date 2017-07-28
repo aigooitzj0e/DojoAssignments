@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+            $(document).ready(function(){
+                $(".click").click(function(){
+                    $(".clickP").slideToggle();
+                })
+                $(".hide").click(function(){
+                    $(".hideP").hide(function(){
+                        $(".hide").click(function(){
+                            $(".hideP").show();
+                        })
+                    });
+                })
+                $(".toggle").click(function(){
+                    $(".toggleP").toggle();
+                })
+                $(".slideDownP").hide(function(){
+                    $(".slideDown").click(function(){
+                        $(".slideDownP").slideDown();
+                    });
+                })
+                $(".slideUpP").hide(function(){
+                    $(".slideUp").click(function(){
+                        $(".slideUpP").slideDown();
+                    });
+                })
+                $(".slideToggle").click(function(){
+                    $(".slideToggleP").slideToggle();
+                })
+                $(".fadeInP").hide(function(){
+                    $(".fadeIn").click(function(){
+                        $(".fadeInP").fadeIn();
+                    });
+                })
+                $(".fadeOut").click(function(){
+                    $(".fadeOutP").fadeOut();
+                })
+                $(".addClass").click(function(){
+                    $("#addClassP").addClass("red");
+                })
+                $(".before").click(function(){
+                    $(".beforeP").before(" Before the P Tag! ");
+                })
+                $(".after").click(function(){
+                    $(".afterP").after(" After the P Tag! ");
+                })
+                $(".append").click(function(){
+                    $(".appendP").append(" I JUST GOT APPENDED!");
+                })
+                $(".html").click(function(){
+                    $(".htmlP").html("<p class='htmlP'>New P Tag!!!!</P>");
+                })
+                $(".attr").click(function(){
+                    $("img").attr("src", "https://i.giphy.com/media/Z3bvJIYORDZde/giphy.webp");
+                })
+                $(".text").click(function(){
+                    $(".textP").text("Hello World!");
+                })
+                $(".val").click(function(){
+                    $("#inputbox").val("Hello World!");
+                })
+
+                var greet = new Object();
+                greet.hi = "Hello Human!";
+                greet.bye = "Bye Human!";
+                $("#btn1").click(function(){
+                    $("#storage").data(greet);
+                });
+                $("#btn2").click(function(){
+                    alert($("#storage").data("bye"));
+                });
+
+
+
+
+            });
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="click">
+                <h1>.click</h1>
+                <button class="click">Click me</button>
+                <p class="clickP">Bind an event handler to the "click" JavaScript event, or trigger that event on an element.</p>
+                <h4 class="clickP">(Click to toggleSlide)</h4>
+            </div>
+            <hr>
+            <div id="hide">
+                <h1>.hide & .show</h1>
+                <button class="hide">Click me</button>
+                <p class="hideP">Hide the matched elements. Show the matched elements.</p>
+                <h4 class="hideP">(Click to hide)</h4>
+            </div>
+            <hr>
+            <div id="toggle">
+                <h1>.toggle</h1>
+                <button class="toggle">Click me</button>
+                <p class="toggleP">Toggle to show and hide the matched elements.</p>
+                <h4 class="toggleP">(Click to toggle)</h4>
+            </div>
+            <hr>
+            <div id="slideDown">
+                <h1>.slideDown</h1>
+                <button class="slideDown">Click me</button>
+                <p class="slideDownP">Display the matched elements with a sliding motion.</p>
+                <h4 class="slideDownP">(Click to slide)</h4>
+            </div>
+            <hr>
+            <div id="slideUp">
+                <h1>.slideUp</h1>
+                <button class="slideUp">Click me</button>
+                <p class="slideUpP">Display the matched elements with a sliding motion.</p>
+                <h4 class="slideUpP">(Click to slide)</h4>
+            </div>
+            <hr>
+            <div id="slideToggle">
+                <h1>.slideToggle</h1>
+                <button class="slideToggle">Click me</button>
+                <p class="slideToggleP">Toggle to Display/Hide the matched elements with a sliding motion.</p>
+                <h4 class="slideToggleP">(Click to slide)</h4>
+            </div>
+            <hr>
+            <div id="fadeIn">
+                <h1>.fadeIn</h1>
+                <button class="fadeIn">Click me</button>
+                <p class="fadeInP">Display the matched elements by fading them to opaque.</p>
+            </div>
+            <hr>
+            <div id="fadeOut">
+                <h1>.fadeOut</h1>
+                <button class="fadeOut">Click me</button>
+                <p class="fadeOutP">Hide the matched elements by fading them to opaque.</p>
+                <h4 class="fadeOutP">(Click to fadeOut)</h4>
+            </div>
+            <hr>
+            <div id="addClass">
+                <h1>.addClass</h1>
+                <button class="addClass">Click me</button>
+                <p id="addClassP">Adds the specified class(es) to each element in the set of matched elements.</p>
+                <h4 id="addClassP">(Click to change colors to red.)</h4>
+            </div>
+            <hr>
+            <div id="before">
+                <h1>.before</h1>
+                <button class="before">Click me</button>
+                <p class="beforeP">Insert content, specified by the parameter, before each element in the set of matched elements.</p>
+                <h4 class="beforeh4">(Click to change.)</h4>
+            </div>
+            <hr>
+            <div id="after">
+                <h1>.after</h1>
+                <button class="after">Click me</button>
+                <p class="afterP">Insert content, specified by the parameter, after each element in the set of matched elements.</p>
+                <h4 class="afterh4">(Click to change.)</h4>
+            </div>
+            <hr>
+            <div id="append">
+                <h1>.append</h1>
+                <button class="append">Click me</button>
+                <p class="appendP">Insert content, specified by the parameter, to the end of each element in the set of matched elements.</p>
+                <h4 class="appendP">(Click to append.)</h4>
+            </div>
+            <hr>
+            <div id="html">
+                <h1>.html</h1>
+                <button class="html">Click me</button>
+                <p class="htmlP">Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element.</p>
+                <h4 class="htmlh4">(Click to replace.)</h4>
+            </div>
+            <hr>
+            <div id="attr">
+                <h1>.attr</h1>
+                <button class="attr">Click me</button>
+                <p class="attrP">Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.</p>
+                <img src="http://braincrook.com/wp-content/uploads/2015/04/Ninja1024x1024-1024x1024.png" alt="ninja" height="100">
+                <h4 class="attrP">(Click to change image.)</h4>
+            </div>
+            <hr>
+            <div id="val">
+                <h1>.val</h1>
+                <button class="val">Click me</button>
+                <p class="valP">Get the current value of the first element in the set of matched elements or set the value of every matched element.</p>
+                <input id="inputbox"type="text">
+                <h4 class="valP">(Click to input values.)</h4>
+            </div>
+            <hr>
+            <div id="text">
+                <h1>.text</h1>
+                <button class="text">Click me</button>
+                <p class="textP">Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.</p>
+                <h4 class="textP">(Click to replace with "Hello World.)</h4>
+            </div>
+            <hr>
+            <div id="data">
+                <h1>.data</h1>
+                <button id="btn1">Attach data to div element</button><br>
+                <button id="btn2">Get data attached to div element</button>
+                <p class="dataP">Store arbitrary data associated with the matched elements.</p>
+                <h4 class="dataP">(Click buttons for Alert)</h4>
+                <div id="storage"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use script";
+            $(document).ready(function(){
+                $('img').hover(function(){
+                    $(this).attr('src', 'dojocat.jpg');
+                }, function(){
+                    $(this).attr('src', 'daftpunk.gif');
+                })
+            });
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Hover In/Out</h1>
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+            <img src="daftpunk.gif" alt="daft punk pic">
+
+        </div>
+    </body>
+</html>

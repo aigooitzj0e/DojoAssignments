@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script>
+            "use strict";
+
+            function attach_handlers(){
+                $(".card").click(function(){
+                    $(this).html("<h1>Description:</h1><p>"+desc.value+"</p>");
+                })
+            }
+
+            $(document).ready(function(){
+                $(document).on("click", "button",".boxDesc", function(){});
+                
+                $("form").submit(function(){
+                    $("#cardHolder").append("<div class='card'><h1>" + first_name.value +" "+last_name.value + "</h1><p class='boxDesc'>--Click for Description--</p></div>");
+                    attach_handlers();
+                    $(this)[0].reset();
+                    return false;
+                });
+            });
+
+
+        </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="form_container">
+                <form id="form">
+                    <ul>
+                        <li><label for="first_name">First Name:</label>
+                            <input type="text" id="first_name" name="first_name"></li>
+                        <li><label for="last_name">Last Name:</label>
+                            <input type="text" id="last_name" name="last_name"></li>
+                        
+                        <li><label for="desc">Description:</label><br>
+                            <textarea id="desc" name="desc"></textarea></li>
+                    </ul>
+                    <button id="btn" type="submit">Add User</button>
+                </form>
+            </div>
+            <div id="cardHolder"></div>
+        </div>
+    </body>
+</html>
