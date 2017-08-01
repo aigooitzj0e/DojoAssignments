@@ -1,0 +1,14 @@
+pip install Django installed Django by using pip commands through gitbash.
+
+pip list shows all installed python packages.
+
+Since Django was previously installed, pip lets you know that it has been installed already.
+
+pip freeze outputs installed packages in requirments format. Packages are also listed in case-insensitive sorted order.
+It creates a .txt file with all installed packages.
+
+pip uninstall Django shows all files that will uninstall and asks for confirmation.
+
+pip show Django gives you the details of what version, author, license, etc.
+
+pip search flask shows all packages with flask in it.
