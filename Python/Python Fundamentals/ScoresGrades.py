@@ -1,10 +1,9 @@
 def ScoresGrades():
   import random
-  random_num = random.randint(60,101)
   
   print "Scores and Grades"
   
-  for ele in range(11):
+  for i in range(11):
     x = random.randint(60,101)
     if x >= 90:
       print "Score:", x, "Your grade is an A"

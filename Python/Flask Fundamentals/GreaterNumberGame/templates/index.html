@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greater Number Game</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<h1>Welcome to the Greater Number Game!</h1>
+	<p>I'm thinking of a number from 1 to 100</p>
+	<p>Take a guess!</p>
+	<div>
+		<p>{{ message }}</p>
+	</div>
+	<form action="/guess" method="post">
+		<input type="text" name="guess_area">
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>

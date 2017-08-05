@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What's My Name</title>
+</head>
+<body>
+	<form action='/results' method='post'>
+
+		Name:<input type="text" name="name">
+
+		<br><br>
+
+		Dojo Location: <select name="location">
+			<option value="burbank">Burbank</option>
+			<option value="sanjose">San Jose</option>
+			<option value="seattle">Seattle</option>
+		</select>
+
+		<br><br>
+
+		Favorite Language: <select name="lang">
+			<option value="python">Python</option>
+			<option value="javascript">Javascript</option>
+			<option value="java">Java</option>
+		</select>
+
+		<br><br>
+
+		<textarea name="comment">Enter text here...</textarea>
+
+		<br>
+
+		<input type="submit" value="create user">
+
+	</form>
+</body>
+</html>

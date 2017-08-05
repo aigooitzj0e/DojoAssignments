@@ -1,0 +1,51 @@
+################# TUPLE FUNCTIONS #####################
+
+max(sequence) returns the largest value in the sequence
+sum(sequence) return the sum of all values in sequence
+enumerate(sequence) used in a for loop context to return two-item-tuple for each item in the list indicating the index followed by the value at that index.
+map(function, sequence) applies the function to every item in the sequence you pass in. Returns a list of the results.
+min(sequence) returns the lowest value in a sequence.
+sorted(sequence) returns a sorted sequence
+
+#######################################################
+################# STRING METHODS ######################
+
+string.count(substring): returns number of occurrences of substring in string.
+string.endswith(substring): returns a boolean based upon whether the last characters of string match substring.
+string.find(substring): returns the index of the start of the first occurrence of substring within string.
+string.isalnum(): returns boolean depending on whether the string's length is > 0 and all characters are alphanumeric (letters and numbers only). Strings that include spaces and punctuation will return False for this method. Similar methods include .isalpha(), .isdigit(), .islower(), .isupper(), and so on. All return booleans.
+string.join(list): returns a string that is all strings within our set (in this case a list) concatenated.
+string.split(): returns a list of values where string is split at the given character. Without a parameter the default split is at every space.
+
+########################################################
+################# LIST FUNCTIONS #######################
+
+enumerate(sequence) used in a for loop context to return two-item-tuple for each item in the list indicating the index followed by the value at that index.
+map(function, sequence) applies the function to every item in the sequence you pass in. Returns a list of the results.
+min(sequence) returns the lowest value in a sequence.
+sorted(sequence) returns a sorted sequence
+
+########################################################
+################## DICTIONARY FUNCTIONS ################
+
+cmp(dict1, dict2) - Compares two dictionaries. The comparison process starts with the length of each dictionary, followed by key names, followed by values. The function returns 0 if the 2 dicts are equal, -1 if dict1 > dict2, 1 if dict1 < dict2.
+len() - give the total length of the dictionary.
+str() - produces a string representation of a dictionary.
+type() - returns the type of the passed variable. If passed variable is a dictionary, it will then return a dictionary type.
+zip() - The name zip was well chosen because the two lists get combined like a zipper.
+dict() - The variable country_specialities now contains the "dictionary" in the 2-tuple list form. This form can be easily transformed into a real dictionary with the function dict().
+
+#### DICTIONARY METHODS ####
+
+.clear() - removes all elements from the dictionary
+.copy() - returns a shallow copy dictionary
+.fromkeys(sequence, [value] ) - create a new dictionary with keys from sequence and values set to value.
+.get(key, default=None) - For key key, returns value or default if key is not in dictionary.
+.has_key(key) - returns true if a given key is available in the dictionary, otherwise it returns false.
+.items() - returns a list of dictionary's (key, value) tuple pairs.
+.keys() - return a list of dictionary keys.
+.setdefault(key, default=None) - similar to get(), but will set dict[key]=default if key is not already in dictionary.
+.update(dict2) = adds dictionary dict2's key-values pairs to an existing dictionary.
+.values() - returns list of dictionary values.
+
+########################################################
