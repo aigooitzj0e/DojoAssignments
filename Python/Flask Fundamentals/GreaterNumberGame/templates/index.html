@@ -8,9 +8,21 @@
 	<h1>Welcome to the Greater Number Game!</h1>
 	<p>I'm thinking of a number from 1 to 100</p>
 	<p>Take a guess!</p>
-	<div>
+
+
+	{% if guess == winning_num: %}
+	<div id="green">
 		<p>{{ message }}</p>
 	</div>
+	{% endif %}
+
+	{% if 50 == 50: %}
+	<div id="red">
+		<p>{{ message }}</p>
+	</div>
+	{% endif %}
+
+
 	<form action="/guess" method="post">
 		<input type="text" name="guess_area">
 		<input type="submit" name="submit">
