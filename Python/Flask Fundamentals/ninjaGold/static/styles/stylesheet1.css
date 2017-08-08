@@ -1,0 +1,54 @@
+#wrapper {
+    width: 930px;
+    margin: 0 auto;
+    padding: 25px;
+    background-image: url(pixelpic.jpg)
+}
+
+#top {
+    color: gold;
+
+}
+
+#main div {
+    display: inline-block;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    margin-right: 25px;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#activ {
+    margin-top: 15px;
+    height: 200px;
+    overflow: scroll;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    background: #cedbe9; /* Old browsers */
+    background: -moz-linear-gradient(top, #cedbe9 0%, #aac5de 17%, #6199c7 33%, #3a84c3 34%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cedbe9 0%,#aac5de 17%,#6199c7 33%,#3a84c3 34%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cedbe9 0%,#aac5de 17%,#6199c7 33%,#3a84c3 34%,#419ad6 59%,#4bb8f0 71%,#3a8bc2 84%,#26558b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=0 ); /* IE6-9 */
+    opacity: 0.9;
+}
+
+#green {
+    color: green;
+}
+
+#red {
+    color: red;
+}
+
+.btn {
+    background-color: aqua;
+    border-radius: 5px;
+}

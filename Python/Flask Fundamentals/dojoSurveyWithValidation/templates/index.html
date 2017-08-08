@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>What's My Name</title>
+</head>
+<body>
+	<form action='/results' method='post'>
+
+		Name:<input type="text" name="name">
+
+		<br><br>
+
+		Dojo Location: <select name="location">
+			<option value="burbank">Burbank</option>
+			<option value="sanjose">San Jose</option>
+			<option value="seattle">Seattle</option>
+		</select>
+
+		<br><br>
+
+		Favorite Language: <select name="lang">
+			<option value="python">Python</option>
+			<option value="javascript">Javascript</option>
+			<option value="java">Java</option>
+		</select>
+
+		<br><br>
+
+		<textarea name="comment"></textarea>
+
+		<br>
+
+		<input type="submit" value="create user">
+
+		{% with messages = get_flashed_messages() %}
+		  {% if messages %}
+		    {% for message in messages %}
+		      <p>{{message}}</p>
+		    {% endfor %}
+		  {% endif %}
+		{% endwith %}
+
+	</form>
+</body>
+</html>

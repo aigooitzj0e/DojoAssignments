@@ -1,50 +1,52 @@
-class Call(object):
-	def __init__(self, unique_id, caller_name, caller_phone_number, time_call, reason_call):
-		self.unique_id = unique_id
-		self.caller_name = caller_name
-		self.caller_phone_number = caller_phone_number
-		self.time_call = time_call
-		self.reason_call = reason_call
+class call(object):
+    def __init__(self,unId,name,number, time, reason):
+        self.unId = unId
+        self.name = name
+        self.number = number 
+        self.time = time
+        self.reason = reason
 
-	def display(self):
-		print self.unique_id
-		print self.caller_name
-		print self.caller_phone_number
-		print self.time_call
-		print self.reason_call
+        #print the information out ::
+    def display(self):
+        print self.unId
+        print self.name
+        print self.number
+        print self.time
+        print self.reason
+        return self
 
-christian = Call("loser", "christian", 555555555, "7:00am", "Diarrhea")
-christian.display()
+Cristian = call(1,"Cristian", 9094206969,"4:20", "re-up")
+Cristian.display()
 
-class CallCenter(Call):
-	def __init__(self, unique_id, caller_name, caller_phone_number, time_call, reason_call):
-		super(CallCenter, self).__init__(unique_id, caller_name, caller_phone_number, time_call, reason_call)
-		self.calls = calls
-		self.numbers = numbers
-		# self.queue_size = len(self.calls)
+class callCenter(object):
+    def __init__(self):
+        self.calls = [] #so that i can append and push information from caller
+        self.queue = 0 # count the amount of callers I add
 
-	def add(self):
-		self.calls = []
-		self.queue_size = len(self.calls)
-		self.calls.append(self.caller_phone_number)
-		return self
+    def add(self,caller):
+        self.calls.append(caller) #add the argument caller w/ call class into array of calls
+        self.queue += 1 # add to the queue 
+        return self
 
-	def remove(self):
-		self.calls.pop(0)
-		return self
+    def remove(self):
+        self.calls.pop(len(self.calls)-1) #removes the last caller from the calls list
+        self.queue -= 1 # remove 1 from the queue
+        return self
 
-	def info(self):
-		print self.caller_name, self.calls, len(self.calls)
-		return self
+    def info(self):
+        print "______________________" #add a border between the queue
+        print "amount of calls:",self.queue
+        print "______________________"
+        for i in self.calls: #print all the info from each element from the calls list..
+            print " " #add spacing for the info..
+            print "caller:", i.name
+            print "number:", i.number
+            print "time:", i.time
+            print "reason:", i.reason
+        return self
 
-
-
-call1 = CallCenter(1, "christian", 555555555, "7:00am", "Diarrhea")
-call2 = CallCenter(2, "mike", 555555555, "7:00am", "Diarrhea")
-call3 = CallCenter(3, "will", 555555555, "7:00am", "Diarrhea")
-
-numbers = [call1, call2, call3]
-
-callcntr = CallCenter([call1, call2, call3])
-christian1.add().info()
-
+caller1 = call(1,'Joe', '8054209919','3:11','ping pong lessons') #gets information from the class for the caller.
+caller2 = call(1,'Will', '6263111313','5:13','bang monte flores x3')
+caller3 = call(1,'Mike', '2813308004','3:11','hit em on the low')
+callcenter1 = callCenter()
+callcenter1.add(caller1).add(caller2).add(caller3).info().remove().remove().info() #add caller argument to the add so i can get in the info from each caller..

@@ -10,13 +10,19 @@
 	<p>Take a guess!</p>
 
 
-	{% if guess == winning_num: %}
+	{% if message == "You win!": %}
 	<div id="green">
 		<p>{{ message }}</p>
 	</div>
 	{% endif %}
 
-	{% if 50 == 50: %}
+	{% if message =="Lower!" %}
+	<div id="red">
+		<p>{{ message }}</p>
+	</div>
+	{% endif %}
+
+	{% if message =="Higher!" %}
 	<div id="red">
 		<p>{{ message }}</p>
 	</div>
