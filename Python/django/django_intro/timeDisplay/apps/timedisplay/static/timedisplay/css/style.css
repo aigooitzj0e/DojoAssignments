@@ -1,0 +1,11 @@
+div {
+    margin: auto;
+}
+
+h1, h3 {
+    padding: 20px;
+    border: 2px solid black;
+    margin: 15px auto;
+    text-align: center;
+    width: 500px;
+}

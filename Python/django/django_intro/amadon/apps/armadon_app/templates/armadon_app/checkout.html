@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Checkout</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'armadon_app/css/style.css' %}">
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1>Order Complete!</h1>
+            <p>You private bank account has been charged <span>${{ request.session.cost }}</span></p>
+            <br><br>
+            <p>You have ordered <span>{{ request.session.count }}</span> items so far and spend a total of <span>${{ request.session.totalamount }}</span>.</p>
+        </div>
+
+
+    </body>
+</html>

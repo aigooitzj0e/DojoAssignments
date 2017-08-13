@@ -1,0 +1,48 @@
+#wrapper {
+    width: 900px;
+    margin: auto;
+}
+#header {
+    /*width: 900px;*/
+    /*background-color: grey;*/
+    border-bottom: 2px solid black;
+}
+
+h1{
+    display: inline-block;
+    margin-left: 20px;
+}
+a {
+    float: right;
+    padding: 30px 20px 0px 0px;
+}
+
+ P{
+     margin: 5px;
+ }
+#body {
+    /*width:900px;*/
+    height: 610px;
+    padding:50px 100px 50px 100px;
+    background-color: lightgrey;
+    overflow: scroll;
+}
+
+#comment {
+    height: 150px;
+    width: 650px;
+    /*margin-left: 100px;
+    margin-top: 50px;*/
+    border-radius: 8px;
+    padding: 25px;
+}
+
+#post {
+    float: right;
+    padding: 10px 20px 10px 20px;
+}
+
+#test {
+    height: 1000px;
+    color: red;
+}

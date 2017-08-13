@@ -1,0 +1,16 @@
+#wrapper {
+    width: 420px;
+    margin: 0 auto;
+}
+
+p {
+    display: inline;
+}
+
+input {
+    float: right;
+}
+
+span {
+    color: red;
+}

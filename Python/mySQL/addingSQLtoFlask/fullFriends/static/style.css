@@ -1,0 +1,30 @@
+* {
+    font-family: Arial;
+}
+td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead {
+    background-color: lightblue;
+}
+
+tbody {
+    background-color: #e0ecff;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+div {
+    width: 430px;
+    background-color: lightgrey;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+input {
+    border-radius: 8px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Results</title>
+    </head>
+    <body>
+        <p>Thanks for submmtting this survey. You have submitted this survey {{ request.session.count }} time(s)!</p>
+        <table>
+            <tr>
+                <td>Name: {{ request.session.name }}</td>
+            </tr>
+            <tr>
+                <td>Dojo Location: {{ request.session.location }}</td>
+            </tr>
+            <tr>
+                <td>Favorite Language: {{ request.session.lang }}</td>
+            </tr>
+            <tr>
+                <td>Comment: {{ request.session.comment }}</td>
+            </tr>
+        </table>
+
+    </body>
+</html>

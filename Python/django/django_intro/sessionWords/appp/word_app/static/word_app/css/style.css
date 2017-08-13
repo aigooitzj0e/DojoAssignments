@@ -1,0 +1,34 @@
+* {
+    font-family: arial;
+}
+
+#wrapper {
+    width: 1000px;
+    padding: 30px;
+    margin: 0 auto;
+    background-color: rgb(123, 127, 156);
+}
+
+#left, #right {
+    width: 45%;
+    border: 2px solid black;
+
+    height: 300px;
+    background-color: white;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+
+}
+
+#red {
+    color: red;
+}
+
+#right {
+    overflow: scroll;
+}
+
+.big {
+    font-size: 3em;
+}

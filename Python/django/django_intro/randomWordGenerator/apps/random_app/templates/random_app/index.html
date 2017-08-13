@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Random Word Generator</title>
+    </head>
+    <body>
+        <div id="main">
+            <p>Random word (Attempt # {{ request.session.count }})</p>
+
+            <h1>{{ randomWord }}</h1>
+            {% csrf_token %}
+            <button onclick="location.href='/generate'" type="button" name="gen">Generate</button>
+
+        </div>
+    </body>
+</html>
