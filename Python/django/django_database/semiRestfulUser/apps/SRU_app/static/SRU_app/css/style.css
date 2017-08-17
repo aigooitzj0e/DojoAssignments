@@ -1,0 +1,40 @@
+
+table {
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+td {
+    padding: 5px 15px 5px 15px;
+    border: 1px solid black;
+}
+
+thead{
+    background-color: lightgray;
+}
+
+tr:hover {
+    background-color: lightgrey;
+    color: red;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 54, 105);
+    padding: 0px 5px 0px 5px;
+}
+
+a:hover {
+    color: rgb(62, 195, 28);
+    text-shadow: 2px 2px 2px black;
+}
+
+.main {
+    margin: auto;
+    width: 750px;
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px gray;
+    padding: 20px;
+    background-color: rgb(119, 157, 213);
+}

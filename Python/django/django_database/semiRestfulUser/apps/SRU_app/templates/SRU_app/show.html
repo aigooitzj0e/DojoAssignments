@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Show</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'SRU_app/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+    <body>
+        <div class="main">
+
+            <p>First name: {{ user.first_name }}</p>
+            <p>Last name: {{ user.last_name }}</p>
+            <p>Email: {{ user.email }}</p>
+            <a href="/edit/{{ user.id }}">Edit</a>
+            <a href="/delete/{{ user.id }}">Delete</a>
+            <p><a href="/">Go back</a></p>
+
+        </div>
+    </body>
+</html>

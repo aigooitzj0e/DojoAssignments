@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Semi-Restful Users</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'SRU_app/css/style.css' %}" media="screen" title="no title"  charset="utf-8">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Users</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <td>id</td>
+                        <td>Full Name</td>
+                        <td>Email</td>
+                        <td>Created At</td>
+                        <td>Actions</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.first_name }} {{user.last_name }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.created_at }}</td>
+                        <td><a href="/show/{{ user.id }}">Show</a> <a href="/edit/{{ user.id }}">edit</a> <a href="delete/{{ user.id }}">Delete</a></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <p><a href="/new">Add a New User</a></p>
+        </div>
+    </body>
+</html>
